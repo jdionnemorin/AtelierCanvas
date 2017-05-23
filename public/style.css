@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+   overflow:hidden;
+}
+
+#drawing {
+   cursor:url(images/crayon.cur),auto;
+}
+
+#eraser {
+   background-color: white;
+}
+
+#eraser:hover {
+   color: black;
+}
+
+#eraser:visited {
+   color: black;
+}
+
+#title {
+   color: white;
+   cursor: default;
+}
+
+#color {
+   height: 30px;
+   border: none;
+}
+
+#width {
+   margin-left: 10px;
+}
+#width-label {
+   color: white;
+}

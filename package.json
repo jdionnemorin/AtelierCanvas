@@ -1,0 +1,25 @@
+{
+  "name": "drawingeditor",
+  "version": "1.0.0",
+  "description": "drawing editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdionnemorin/drawingeditor.git"
+  },
+  "author": "jonathan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdionnemorin/drawingeditor/issues"
+  },
+  "homepage": "https://github.com/jdionnemorin/drawingeditor#readme",
+  "devDependencies": {
+    "express": "^4.15.2"
+  },
+  "dependencies": {
+    "socket.io": "^2.0.1"
+  }
+}

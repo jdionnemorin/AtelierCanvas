@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<script src="socket.io/socket.io.js"></script>
+		<script src="drawings.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body>
+        <nav  id="nav" class="navbar-inverse navbar  navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="title" class="navbar-brand" href="#">DRAW WITH FRIENDS</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" onclick="">CRAYON</a></li>
+                        <li><a href="#" onclick="">RECTANGLE</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input id="color" type="color"  value="#000000" onchange="">
+                        </div>
+                        <label id="width-label">TAILLE</label>
+                        <div class="form-group">
+
+                            <input id="width" type="range" min="1" max="100" value="2" onchange="changeWidth()">
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="eraser"href="#" onclick="">EFFACER</a></li>
+                        <li><a href="#" onclick="">RESET</a></li>
+                        <li><a id="download" download="Canvas.png" href="#">TÉLÉCHARGER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <canvas id="drawing">
+            <p>Cette application ne supporte pas votre navigateur.</p>
+        </canvas>
+    </body>
+</html>
